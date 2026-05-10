@@ -23,10 +23,6 @@ all inside a sleek, dark-mode-ready dashboard.
 
 ---
 
-═══════════════════════════════════════════════════
-OVERVIEW
-═══════════════════════════════════════════════════
-
 ## Overview
 
 VulnSight is a professional-grade web security platform built with Python and Streamlit. It combines an automated XSS scanning engine, a static source-code analyzer, a real-time CVE intelligence feed, and a full analytics dashboard into a single deployable application.
@@ -34,10 +30,6 @@ VulnSight is a professional-grade web security platform built with Python and St
 Designed for security researchers, developers, and penetration testers, VulnSight makes vulnerability discovery fast, visual, and actionable — without requiring any external tooling or complex configuration. It can be spun up locally or deployed as a containerized service in minutes.
 
 ---
-
-═══════════════════════════════════════════════════
-OBJECTIVES
-═══════════════════════════════════════════════════
 
 ## Objectives
 
@@ -49,10 +41,6 @@ OBJECTIVES
 - Package the entire platform as a containerized, one-command deployment via Docker
 
 ---
-
-═══════════════════════════════════════════════════
-TOOLS & TECHNOLOGIES
-═══════════════════════════════════════════════════
 
 ## Tools & Technologies
 
@@ -72,10 +60,6 @@ TOOLS & TECHNOLOGIES
 </div>
 
 ---
-
-═══════════════════════════════════════════════════
-PROJECT STRUCTURE
-═══════════════════════════════════════════════════
 
 ## Project Structure
 
@@ -108,10 +92,6 @@ VulnSight/
 
 ---
 
-═══════════════════════════════════════════════════
-METHODOLOGY & IMPLEMENTATION
-═══════════════════════════════════════════════════
-
 ## Methodology & Implementation
 
 ### 1. Authentication Layer
@@ -140,105 +120,97 @@ A Jinja2-powered HTML report renderer produces a fully self-contained, styled vu
 
 ---
 
-═══════════════════════════════════════════════════
-RESULTS & SCREENSHOTS
-═══════════════════════════════════════════════════
-
 ## Results & Screenshots
 
 ---
 
 ### Login — Secure Session Authentication
 
-![Login](Screenshots/vulnsight-login.png)
-
-SHA-256 hashed credential store with a clean sidebar login form. Sessions persist across tab navigation and clear automatically on logout.
+| ![Login](Screenshots/vulnsight-login.png) |
+|:--:|
+| *SHA-256 hashed credential store with a clean sidebar login form. Sessions persist across tab navigation and clear automatically on logout.* |
 
 ---
 
 ### Scanner — Target Configuration
 
-![Scanner](Screenshots/vuln-scanner.png)
-
-The scanner module accepts any HTTP/HTTPS target URL. Built-in warnings enforce ethical use — only authorised targets should be tested.
+| ![Scanner](Screenshots/vuln-scanner.png) |
+|:--:|
+| *The scanner module accepts any HTTP/HTTPS target URL. Built-in warnings enforce ethical use — only authorised targets should be tested.* |
 
 ---
 
 ### Scanner — Active Scan in Progress
 
-![Scanning](Screenshots/scanning-target.png)
-
-The engine crawls forms, injects payloads, and streams results in real time. Each request includes a 10-second timeout and SSL error recovery.
+| ![Scanning](Screenshots/scanning-target.png) |
+|:--:|
+| *The engine crawls forms, injects payloads, and streams results in real time. Each request includes a 10-second timeout and SSL error recovery.* |
 
 ---
 
 ### Scanner — Vulnerability Findings
 
-![Results](Screenshots/scanner-results.png)
-
-Confirmed Reflected XSS findings displayed with the triggering payload, affected URL, and severity badge. One confirmed hit per form prevents result spam.
+| ![Results](Screenshots/scanner-results.png) |
+|:--:|
+| *Confirmed Reflected XSS findings displayed with the triggering payload, affected URL, and severity badge. One confirmed hit per form prevents result spam.* |
 
 ---
 
 ### Scanner — Exported HTML Report
 
-![Report](Screenshots/scanner-report.png)
-
-A fully styled, self-contained HTML report with severity summary cards and a complete findings table — ready for client delivery or internal documentation.
+| ![Report](Screenshots/scanner-report.png) |
+|:--:|
+| *A fully styled, self-contained HTML report with severity summary cards and a complete findings table — ready for client delivery or internal documentation.* |
 
 ---
 
 ### Code Analyzer — Source Input
 
-![Analyzer Input](Screenshots/code-analyzer.png)
-
-Paste any source code — Python, JavaScript, or any text-based language — and the engine scans it against 12 security rules instantly.
+| ![Analyzer Input](Screenshots/code-analyzer.png) |
+|:--:|
+| *Paste any source code — Python, JavaScript, or any text-based language — and the engine scans it against 12 security rules instantly.* |
 
 ---
 
 ### Code Analyzer — All Findings
 
-![Analyzer Results](Screenshots/analyzer-results.png)
-
-All detected issues listed with severity badges, line numbers, and issue category. A single vulnerable file can surface Critical, High, Medium, and Low findings simultaneously.
+| ![Analyzer Results](Screenshots/analyzer-results.png) |
+|:--:|
+| *All detected issues listed with severity badges, line numbers, and issue category. A single vulnerable file can surface Critical, High, Medium, and Low findings simultaneously.* |
 
 ---
 
 ### Code Analyzer — Finding Detail
 
-![Analyzer Detail](Screenshots/analyzer-result-details.png)
-
-Each finding expands to show the exact code snippet and a targeted remediation recommendation — no ambiguity, no guesswork.
+| ![Analyzer Detail](Screenshots/analyzer-result-details.png) |
+|:--:|
+| *Each finding expands to show the exact code snippet and a targeted remediation recommendation — no ambiguity, no guesswork.* |
 
 ---
 
 ### Analytics — Session Dashboard
 
-![Analytics](Screenshots/analytics-dashboard.png)
-
-Four metric cards, a severity distribution panel, a finding-type breakdown, and a paginated results table — giving a complete picture of everything found in the session.
+| ![Analytics](Screenshots/analytics-dashboard.png) |
+|:--:|
+| *Four metric cards, a severity distribution panel, a finding-type breakdown, and a paginated results table — giving a complete picture of everything found in the session.* |
 
 ---
 
 ### Threat Intelligence — CVE Feed
 
-![Threat Intel](Screenshots/threat-intel.png)
-
-Live CVE entries sorted by CVSS score. Critical and High severity disclosures surface first for immediate triage.
+| ![Threat Intel](Screenshots/threat-intel.png) |
+|:--:|
+| *Live CVE entries sorted by CVSS score. Critical and High severity disclosures surface first for immediate triage.* |
 
 ---
 
 ### Threat Intelligence — CVE Detail
 
-![Threat Intel Detail](Screenshots/threat-intel-detail.png)
-
-Each CVE entry expands with a plain-English description, CVSS base score, severity classification, and a direct link to the National Vulnerability Database.
+| ![Threat Intel Detail](Screenshots/threat-intel-detail.png) |
+|:--:|
+| *Each CVE entry expands with a plain-English description, CVSS base score, severity classification, and a direct link to the National Vulnerability Database.* |
 
 ---
-
-═══════════════════════════════════════════════════
-COMMANDS & DEPLOYMENT
-═══════════════════════════════════════════════════
 
 ## Commands & Deployment
 
@@ -277,10 +249,6 @@ Password: admin123
 
 ---
 
-═══════════════════════════════════════════════════
-CONCLUSION
-═══════════════════════════════════════════════════
-
 ## Conclusion
 
 VulnSight demonstrates that professional-grade security tooling does not require heavyweight frameworks or complex infrastructure. By combining an automated XSS scanner, a static code analyzer, real-time CVE intelligence, and a polished analytics dashboard into a single containerized Python application, the platform delivers genuine security value with minimal setup friction.
@@ -293,6 +261,6 @@ VulnSight proves that clarity, design, and security can coexist in a single tool
 
 <div align="center">
 
-Developed as part of the SyntexcHub Cybersecurity Internship.
+Developed as part of my Cybersecurity Internship at SyntecxHub.
 
 </div>
